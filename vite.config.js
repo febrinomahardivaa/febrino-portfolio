@@ -4,5 +4,5 @@ import { defineConfig } from 'vite'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/febrino-portfolio',
+  base: process.env.VITE_BASE_PATH || '/febrino-portfolio',
 })
